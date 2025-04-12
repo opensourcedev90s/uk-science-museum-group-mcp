@@ -1,7 +1,7 @@
-# A Model Context Protocol Server for the British Science Museum Data API
+# A Model Context Protocol Server for the UK Science Museum Group API
 
 This project is a Python MCP (https://modelcontextprotocol.io/introduction) server that allows your LLM to fetch data
-from the British Science Museum. Info is available at https://github.com/TheScienceMuseum/collectionsonline/wiki/Collections-Online-API#get-search.
+from the UK Science Museum Group. Info is available at https://github.com/TheScienceMuseum/collectionsonline/wiki/Collections-Online-API#get-search.
 
 It is currently supported by Claude Desktop for MacOS and Windows.
 
