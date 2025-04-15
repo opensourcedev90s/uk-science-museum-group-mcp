@@ -51,7 +51,7 @@ Open this file and change it to:
 ```
 Opening Claude Desktop should now start the MCP server, and Claude can be queried. As an example:
 
-![image](https://github.com/user-attachments/assets/f934d6fb-4938-4ad5-969c-18d060e20134)
+<img width="748" alt="Screenshot 2025-04-15 at 19 43 05" src="https://github.com/user-attachments/assets/6690b802-24c3-40f0-85b2-d4a2b6cc5460" />
 
 
 Anthropic's own instructions for this step are here - https://modelcontextprotocol.info/docs/quickstart/user/.
