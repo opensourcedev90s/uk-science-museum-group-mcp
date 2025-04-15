@@ -1,6 +1,6 @@
 [project]
 name = "science-museum-mcp"
-version = "0.1.26"
+version = "1.0.0"
 description = "MCP Server for the British Science Museum"
 readme = "README.md"
 requires-python = ">=3.13"
