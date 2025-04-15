@@ -91,3 +91,7 @@ The inspector should output the localhost URL for accessing its UI.
 source .venv/bin/activate
 pytest
 ```
+
+## Publishing
+
+This is currently a manual process I can do. This will be changed to a Github action if the project gets any development from now on.
