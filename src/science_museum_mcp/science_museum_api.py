@@ -11,6 +11,7 @@ from science_museum_mcp.constants import LOGGER_NAME, SEARCH_ALL_PATH, SEARCH_OB
 logger = logging.getLogger(LOGGER_NAME)
 logger.setLevel(logging.DEBUG)
 BASE_URL = "https://collection.sciencemuseumgroup.org.uk"
+BROWSER_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:151.0) Gecko/20100101 Firefox/151.0"
 
 # Data contract
 def data_object(records: list, msg: str | None, success: bool) -> dict:
@@ -66,7 +67,8 @@ def search(search_type: ScienceMuseumTools, search_term: str, limit: int, offset
     }
 
     headers = {
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "User-Agent": BROWSER_USER_AGENT
     }
     logger.info(f"GET {url} with params {params}")
 
