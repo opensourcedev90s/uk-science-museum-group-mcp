@@ -7,6 +7,18 @@ It is currently supported by Claude Desktop for MacOS and Windows.
 
 # Integrate with Claude Desktop
 
+This guide assumes you are using Homebrew on MacOS for package management.
+
+Download Claude Desktop.
+
+MacOS:
+```shell
+brew install --cask claude
+```
+
+Windows:
+https://claude.com/download
+
 All you need is to install UV, a Python package/ project manager, then change your Claude Desktop settings to add this MCP.
 
 For MacOS:
@@ -35,21 +47,23 @@ This will create a configuration file at:
     macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
     Windows: %APPDATA%\Claude\claude_desktop_config.json
 
-Open this file and change it to:
+Open this file and add this JSON blob as a top level key in the existing JSON config:
 
 ```json
-{
-  "mcpServers": {
+
+"mcpServers": {
     "scienceMuseum": {
       "command": "uvx",
       "args": [
         "science-museum-mcp"
       ]
     }
-  }
 }
+
 ```
-Opening Claude Desktop should now start the MCP server, and Claude can be queried. As an example:
+Closing and re-opening Claude Desktop should now start the MCP server. This can be verified by pressing the "+" icon in Claude's prompt input and viewing Connectors. The "scienceMuseum" connector should be activated.
+
+Claude can now be queried. As an example:
 
 <img width="748" alt="Screenshot 2025-04-15 at 19 43 05" src="https://github.com/user-attachments/assets/6690b802-24c3-40f0-85b2-d4a2b6cc5460" />
 
